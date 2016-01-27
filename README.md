@@ -1,0 +1,2 @@
+# docker-redmine-evernotecustom
+sameersbn/docker-redmineのメール通知のタイトルにEvernoteのノートブックを指定する機能を追加
