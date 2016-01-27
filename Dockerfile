@@ -37,6 +37,9 @@ RUN bash ${REDMINE_BUILD_DIR}/install.sh
 COPY assets/runtime/ ${REDMINE_RUNTIME_DIR}/
 COPY assets/tools/ /usr/bin/
 COPY entrypoint.sh /sbin/entrypoint.sh
+
+COPY mailer.rb ${REDMINE_HOME}/redmine/app/models/
+
 RUN chmod 755 /sbin/entrypoint.sh
 
 EXPOSE 80/tcp 443/tcp
